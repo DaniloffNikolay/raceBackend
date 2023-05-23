@@ -34,9 +34,6 @@ public class SecurityConfig {
         AuthenticationManager authenticationManager = authenticationManagerBuilder.build();
 
         http
-                .csrf(AbstractHttpConfigurer::disable);
-
-        http
                 .authenticationManager(authenticationManager)
                 .authorizeHttpRequests((authz) ->
                         authz

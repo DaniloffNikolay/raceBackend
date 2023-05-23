@@ -10,7 +10,7 @@
 
     <label for="username">Введите имя пользователя: </label>
     <input type="text" th:field="*{name}" id="username"/>
-    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{nam   e}">Username error</div>
+    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Username error</div>
     <br/>
 
     <label for="password">Введите пароль: </label>

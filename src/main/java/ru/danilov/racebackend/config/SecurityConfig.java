@@ -28,25 +28,36 @@ public class SecurityConfig {
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         // Configure AuthenticationManagerBuilder
         AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.userDetailsService(personDetailsService);  ///*authenticationProvider(authProvider)*/
+        authenticationManagerBuilder.userDetailsService(personDetailsService)
+                .passwordEncoder(getPasswordEncoder());  ///*authenticationProvider(authProvider)*/
         // Get AuthenticationManager
         AuthenticationManager authenticationManager = authenticationManagerBuilder.build();
 
-        http.csrf(AbstractHttpConfigurer::disable);
+        http
+                .csrf(AbstractHttpConfigurer::disable);
 
-        http.authenticationManager(authenticationManager)
-                .authorizeHttpRequests((authz) -> authz
-                        .requestMatchers("/", "/auth/**").permitAll()
-                        .anyRequest().authenticated()
+        http
+                .authenticationManager(authenticationManager)
+                .authorizeHttpRequests((authz) ->
+                        authz
+                                .requestMatchers("/", "/auth/**").permitAll()
+                                .anyRequest().authenticated()
                 );
 
-        http.formLogin((formLogin) ->
-                formLogin
-                        .loginPage("/auth/login")
-                        .loginProcessingUrl("/process_login")
-                        .defaultSuccessUrl("/", true)
-                        .failureUrl("/auth/login?error")
-        );
+        http
+                .formLogin((formLogin) ->
+                        formLogin
+                                .loginPage("/auth/login")
+                                .loginProcessingUrl("/process_login")
+                                .defaultSuccessUrl("/", true)
+                                .failureUrl("/auth/login?error")
+                ).logout((logout) ->
+                        logout
+                                .deleteCookies("remove")
+                                .invalidateHttpSession(false)
+                                .logoutUrl("/logout")
+                                .logoutSuccessUrl("/auth/login")
+                );
 
         return http.build();
     }

@@ -497,3 +497,881 @@
 2023-05-24T12:18:11.484+03:00  INFO 7984 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-24T12:18:11.487+03:00  INFO 7984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-24T12:18:11.495+03:00  INFO 7984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:02:38.701+03:00  INFO 10900 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 10900 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:02:38.724+03:00  INFO 10900 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:02:40.444+03:00  INFO 10900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:02:40.539+03:00  INFO 10900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:02:41.714+03:00  INFO 10900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:02:41.729+03:00  INFO 10900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:02:41.730+03:00  INFO 10900 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:02:41.874+03:00  INFO 10900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:02:41.874+03:00  INFO 10900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3061 ms
+2023-05-24T13:02:42.124+03:00  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:02:42.581+03:00  INFO 10900 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1eb9a3ef
+2023-05-24T13:02:42.583+03:00  INFO 10900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:02:42.704+03:00  INFO 10900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:02:42.810+03:00  INFO 10900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:02:42.815+03:00  INFO 10900 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:02:43.057+03:00  INFO 10900 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:02:43.511+03:00  INFO 10900 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:02:43.802+03:00  INFO 10900 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@5b14f482
+2023-05-24T13:02:44.056+03:00  INFO 10900 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:02:44.877+03:00  INFO 10900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:02:44.882+03:00  INFO 10900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:02:45.484+03:00  WARN 10900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:02:46.026+03:00  INFO 10900 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f0d01c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c38e2bf, org.springframework.security.web.context.SecurityContextHolderFilter@6b063695, org.springframework.security.web.header.HeaderWriterFilter@3cd28235, org.springframework.security.web.csrf.CsrfFilter@6e96f3cd, org.springframework.security.web.authentication.logout.LogoutFilter@694f0655, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c65ec63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fc4038f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24a1858a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@205b73d8, org.springframework.security.web.access.ExceptionTranslationFilter@3a0b6aff, org.springframework.security.web.access.intercept.AuthorizationFilter@1fb00a6d]
+2023-05-24T13:02:46.588+03:00  INFO 10900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:02:46.641+03:00  INFO 10900 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 9.25 seconds (process running for 12.101)
+2023-05-24T13:02:59.311+03:00  INFO 10900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:02:59.311+03:00  INFO 10900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:02:59.313+03:00  INFO 10900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:03:03.789+03:00 DEBUG 10900 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T13:03:06.831+03:00  INFO 10900 --- [http-nio-8080-exec-5] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T13:03:07.458+03:00 ERROR 10900 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.concurrent.ExecutionException: java.net.ConnectException] with root cause
+
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-24T13:04:02.219+03:00  INFO 10900 --- [http-nio-8080-exec-7] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T13:04:29.017+03:00  INFO 10900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:04:29.020+03:00  INFO 10900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:04:29.029+03:00  INFO 10900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:04:43.226+03:00  INFO 5488 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 5488 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:04:43.232+03:00  INFO 5488 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:04:44.464+03:00  INFO 5488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:04:44.561+03:00  INFO 5488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:04:45.552+03:00  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:04:45.565+03:00  INFO 5488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:04:45.566+03:00  INFO 5488 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:04:45.695+03:00  INFO 5488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:04:45.696+03:00  INFO 5488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2361 ms
+2023-05-24T13:04:45.889+03:00  INFO 5488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:04:46.095+03:00  INFO 5488 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3663d0ba
+2023-05-24T13:04:46.097+03:00  INFO 5488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:04:46.149+03:00  INFO 5488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:04:46.237+03:00  INFO 5488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:04:46.242+03:00  INFO 5488 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:04:46.538+03:00  INFO 5488 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:04:46.776+03:00  INFO 5488 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:04:46.846+03:00  INFO 5488 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@11c7a0b4
+2023-05-24T13:04:47.176+03:00  INFO 5488 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:04:48.231+03:00  INFO 5488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:04:48.236+03:00  INFO 5488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:04:48.800+03:00  WARN 5488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:04:49.220+03:00  INFO 5488 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a7b5925, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a5b394, org.springframework.security.web.context.SecurityContextHolderFilter@5c13534a, org.springframework.security.web.header.HeaderWriterFilter@694f0655, org.springframework.security.web.csrf.CsrfFilter@270ab7bc, org.springframework.security.web.authentication.logout.LogoutFilter@5b9df3b3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b868ef0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@782e0844, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fb00a6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c9b6332, org.springframework.security.web.access.ExceptionTranslationFilter@18ffc008, org.springframework.security.web.access.intercept.AuthorizationFilter@1165a952]
+2023-05-24T13:04:49.570+03:00  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:04:49.586+03:00  INFO 5488 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.421 seconds (process running for 9.803)
+2023-05-24T13:05:08.215+03:00  INFO 5488 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:05:08.215+03:00  INFO 5488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:05:08.216+03:00  INFO 5488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:07:32.599+03:00  INFO 5488 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:07:32.602+03:00  INFO 5488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:07:32.610+03:00  INFO 5488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:07:48.005+03:00  INFO 7924 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 7924 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:07:48.010+03:00  INFO 7924 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:07:49.197+03:00  INFO 7924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:07:49.285+03:00  INFO 7924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:07:50.107+03:00  INFO 7924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:07:50.118+03:00  INFO 7924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:07:50.118+03:00  INFO 7924 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:07:50.252+03:00  INFO 7924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:07:50.253+03:00  INFO 7924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2166 ms
+2023-05-24T13:07:50.427+03:00  INFO 7924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:07:50.580+03:00  INFO 7924 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1775c4e7
+2023-05-24T13:07:50.582+03:00  INFO 7924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:07:50.627+03:00  INFO 7924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:07:50.687+03:00  INFO 7924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:07:50.690+03:00  INFO 7924 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:07:50.907+03:00  INFO 7924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:07:51.106+03:00  INFO 7924 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:07:51.197+03:00  INFO 7924 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4899799b
+2023-05-24T13:07:51.627+03:00  INFO 7924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:07:52.795+03:00  INFO 7924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:07:52.800+03:00  INFO 7924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:07:53.295+03:00  WARN 7924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:07:53.657+03:00  INFO 7924 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@247a8411, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c05f83b, org.springframework.security.web.context.SecurityContextHolderFilter@49f9758, org.springframework.security.web.header.HeaderWriterFilter@7e7987b8, org.springframework.security.web.csrf.CsrfFilter@7b11ff9a, org.springframework.security.web.authentication.logout.LogoutFilter@659ac28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2569afda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@209b4b35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f7b7720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.AuthorizationFilter@7c751692]
+2023-05-24T13:07:54.032+03:00  INFO 7924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:07:54.045+03:00  INFO 7924 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.877 seconds (process running for 7.89)
+2023-05-24T13:12:54.944+03:00  INFO 7924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:12:54.947+03:00  INFO 7924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:12:54.955+03:00  INFO 7924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:13:01.528+03:00  INFO 12116 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 12116 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:13:01.532+03:00  INFO 12116 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:13:02.707+03:00  INFO 12116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:13:02.800+03:00  INFO 12116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:13:03.670+03:00  INFO 12116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:13:03.680+03:00  INFO 12116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:13:03.680+03:00  INFO 12116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:13:03.791+03:00  INFO 12116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:13:03.791+03:00  INFO 12116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2190 ms
+2023-05-24T13:13:03.966+03:00  INFO 12116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:13:04.111+03:00  INFO 12116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d40a3b4
+2023-05-24T13:13:04.113+03:00  INFO 12116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:13:04.158+03:00  INFO 12116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:13:04.229+03:00  INFO 12116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:13:04.233+03:00  INFO 12116 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:13:04.420+03:00  INFO 12116 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:13:04.595+03:00  INFO 12116 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:13:04.659+03:00  INFO 12116 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@6704df84
+2023-05-24T13:13:04.904+03:00  INFO 12116 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:13:05.695+03:00  INFO 12116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:13:05.701+03:00  INFO 12116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:13:06.136+03:00  WARN 12116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:13:06.480+03:00  INFO 12116 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18356951, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53335328, org.springframework.security.web.context.SecurityContextHolderFilter@f7b7720, org.springframework.security.web.header.HeaderWriterFilter@77acc95a, org.springframework.security.web.csrf.CsrfFilter@12aa2cca, org.springframework.security.web.authentication.logout.LogoutFilter@1b984ba5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a9ac8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cd2e348, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d3af4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a0b6aff, org.springframework.security.web.access.ExceptionTranslationFilter@36e98434, org.springframework.security.web.access.intercept.AuthorizationFilter@820b78a]
+2023-05-24T13:13:06.773+03:00  INFO 12116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:13:06.784+03:00  INFO 12116 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.002 seconds (process running for 7.249)
+2023-05-24T13:13:51.708+03:00  INFO 12116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:13:51.711+03:00  INFO 12116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:13:51.722+03:00  INFO 12116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:13:57.920+03:00  INFO 144 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 144 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:13:57.926+03:00  INFO 144 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:13:59.440+03:00  INFO 144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:13:59.532+03:00  INFO 144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:14:00.524+03:00  INFO 144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:14:00.543+03:00  INFO 144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:14:00.544+03:00  INFO 144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:14:00.719+03:00  INFO 144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:14:00.720+03:00  INFO 144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2714 ms
+2023-05-24T13:14:00.939+03:00  INFO 144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:14:01.173+03:00  INFO 144 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59fc6d05
+2023-05-24T13:14:01.177+03:00  INFO 144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:14:01.267+03:00  INFO 144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:14:01.386+03:00  INFO 144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:14:01.393+03:00  INFO 144 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:14:01.674+03:00  INFO 144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:14:01.901+03:00  INFO 144 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:14:01.972+03:00  INFO 144 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@53bb71e5
+2023-05-24T13:14:02.235+03:00  INFO 144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:14:02.970+03:00  INFO 144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:14:02.974+03:00  INFO 144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:14:03.422+03:00  WARN 144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:14:03.759+03:00  INFO 144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a0b6aff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f1e1d66, org.springframework.security.web.context.SecurityContextHolderFilter@1cd2e348, org.springframework.security.web.header.HeaderWriterFilter@75c3584e, org.springframework.security.web.csrf.CsrfFilter@2823b7c5, org.springframework.security.web.authentication.logout.LogoutFilter@41433530, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15a41088, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27aa7294, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37fd496a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cd28235, org.springframework.security.web.access.ExceptionTranslationFilter@77acc95a, org.springframework.security.web.access.intercept.AuthorizationFilter@7683ea43]
+2023-05-24T13:14:04.073+03:00  INFO 144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:14:04.086+03:00  INFO 144 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.954 seconds (process running for 8.255)
+2023-05-24T13:14:29.520+03:00  INFO 144 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:14:29.521+03:00  INFO 144 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:14:29.522+03:00  INFO 144 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:16:16.148+03:00  INFO 144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:16:16.151+03:00  INFO 144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:16:16.158+03:00  INFO 144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:16:24.578+03:00  INFO 12208 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 12208 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:16:24.585+03:00  INFO 12208 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:16:26.051+03:00  INFO 12208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:16:26.159+03:00  INFO 12208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:16:27.174+03:00  INFO 12208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:16:27.190+03:00  INFO 12208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:16:27.191+03:00  INFO 12208 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:16:27.361+03:00  INFO 12208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:16:27.362+03:00  INFO 12208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2655 ms
+2023-05-24T13:16:27.581+03:00  INFO 12208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:16:27.811+03:00  INFO 12208 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5c6a30
+2023-05-24T13:16:27.814+03:00  INFO 12208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:16:27.886+03:00  INFO 12208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:16:27.965+03:00  INFO 12208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:16:27.969+03:00  INFO 12208 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:16:28.267+03:00  INFO 12208 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:16:28.441+03:00  INFO 12208 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:16:28.506+03:00  INFO 12208 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@6775c0d1
+2023-05-24T13:16:28.773+03:00  INFO 12208 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:16:29.544+03:00  INFO 12208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:16:29.547+03:00  INFO 12208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:16:30.021+03:00  WARN 12208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:16:30.358+03:00  INFO 12208 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28dd8786, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70efdd18, org.springframework.security.web.context.SecurityContextHolderFilter@6bcfb561, org.springframework.security.web.header.HeaderWriterFilter@2a666c8e, org.springframework.security.web.csrf.CsrfFilter@6870a76f, org.springframework.security.web.authentication.logout.LogoutFilter@13cae908, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41433530, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49f9758, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ff1a5a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@247a8411, org.springframework.security.web.access.ExceptionTranslationFilter@4154ecd3, org.springframework.security.web.access.intercept.AuthorizationFilter@1812b564]
+2023-05-24T13:16:30.689+03:00  INFO 12208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:16:30.701+03:00  INFO 12208 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.973 seconds (process running for 11.319)
+2023-05-24T13:16:36.000+03:00  INFO 12208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:16:36.001+03:00  INFO 12208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:16:36.003+03:00  INFO 12208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T13:17:22.455+03:00 DEBUG 12208 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T13:29:37.701+03:00  INFO 12208 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:29:37.715+03:00  INFO 12208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:29:37.743+03:00  INFO 12208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:30:33.003+03:00  INFO 11248 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 11248 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:30:33.009+03:00  INFO 11248 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:30:34.458+03:00  INFO 11248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:30:34.551+03:00  INFO 11248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:30:35.438+03:00  INFO 11248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:30:35.452+03:00  INFO 11248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:30:35.453+03:00  INFO 11248 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:30:35.755+03:00  INFO 11248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:30:35.756+03:00  INFO 11248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2673 ms
+2023-05-24T13:30:35.968+03:00  INFO 11248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:30:36.206+03:00  INFO 11248 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66f5a02e
+2023-05-24T13:30:36.208+03:00  INFO 11248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:30:36.292+03:00  INFO 11248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:30:36.458+03:00  INFO 11248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:30:36.462+03:00  INFO 11248 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:30:36.748+03:00  INFO 11248 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:30:37.322+03:00  INFO 11248 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:30:37.478+03:00  INFO 11248 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@29dcdd1c
+2023-05-24T13:30:37.717+03:00  INFO 11248 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:30:38.524+03:00  INFO 11248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:30:38.528+03:00  INFO 11248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:30:38.978+03:00  WARN 11248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:30:39.398+03:00  INFO 11248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@400df2b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70044113, org.springframework.security.web.context.SecurityContextHolderFilter@7c751692, org.springframework.security.web.header.HeaderWriterFilter@1b984ba5, org.springframework.security.web.csrf.CsrfFilter@43b7bd5a, org.springframework.security.web.authentication.logout.LogoutFilter@359a2c96, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54ec8ab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28dd8786, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@820b78a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ffc008, org.springframework.security.web.access.ExceptionTranslationFilter@6e96f3cd, org.springframework.security.web.access.intercept.AuthorizationFilter@7804a783]
+2023-05-24T13:30:39.706+03:00  INFO 11248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:30:39.731+03:00  INFO 11248 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.485 seconds (process running for 10.037)
+2023-05-24T13:30:44.418+03:00  INFO 11248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:30:44.418+03:00  INFO 11248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:30:44.420+03:00  INFO 11248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:30:59.838+03:00 DEBUG 11248 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T13:36:06.153+03:00  INFO 11248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:36:06.169+03:00  INFO 11248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:36:06.192+03:00  INFO 11248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:36:23.206+03:00  INFO 11388 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 11388 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:36:23.210+03:00  INFO 11388 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:36:24.779+03:00  INFO 11388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:36:25.231+03:00  INFO 11388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 217 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:36:27.176+03:00  INFO 11388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:36:27.195+03:00  INFO 11388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:36:27.196+03:00  INFO 11388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:36:27.375+03:00  INFO 11388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:36:27.375+03:00  INFO 11388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4092 ms
+2023-05-24T13:36:27.627+03:00  INFO 11388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:36:28.191+03:00  INFO 11388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17207f5b
+2023-05-24T13:36:28.193+03:00  INFO 11388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:36:28.298+03:00  INFO 11388 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:36:28.433+03:00  INFO 11388 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:36:28.446+03:00  INFO 11388 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:36:28.812+03:00  INFO 11388 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:36:29.695+03:00  INFO 11388 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:36:29.884+03:00  INFO 11388 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7cd3e0da
+2023-05-24T13:36:30.531+03:00  INFO 11388 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:36:32.240+03:00  INFO 11388 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:36:32.245+03:00  INFO 11388 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:36:34.184+03:00  WARN 11388 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:36:36.420+03:00  INFO 11388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@608c7b5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2643ed03, org.springframework.security.web.context.SecurityContextHolderFilter@18356951, org.springframework.security.web.header.HeaderWriterFilter@6a9ac8b, org.springframework.security.web.csrf.CsrfFilter@7a2ffb0b, org.springframework.security.web.authentication.logout.LogoutFilter@54ec8ab3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c13534a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a0b6aff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@140cfc5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17d45cfb, org.springframework.security.web.access.ExceptionTranslationFilter@4c05f83b, org.springframework.security.web.access.intercept.AuthorizationFilter@5d08a65c]
+2023-05-24T13:36:38.421+03:00  INFO 11388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:36:38.456+03:00  INFO 11388 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 16.258 seconds (process running for 24.834)
+2023-05-24T13:44:34.821+03:00  INFO 11388 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:44:34.822+03:00  INFO 11388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:44:34.823+03:00  INFO 11388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:54:07.409+03:00  INFO 11388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:54:07.425+03:00  INFO 11388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:54:07.445+03:00  INFO 11388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:54:32.777+03:00  INFO 7164 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 7164 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:54:32.790+03:00  INFO 7164 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:54:36.095+03:00  INFO 7164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:54:36.279+03:00  INFO 7164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:54:38.482+03:00  INFO 7164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:54:38.510+03:00  INFO 7164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:54:38.511+03:00  INFO 7164 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:54:38.662+03:00  INFO 7164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:54:38.663+03:00  INFO 7164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5726 ms
+2023-05-24T13:54:38.963+03:00  INFO 7164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:54:39.237+03:00  INFO 7164 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e3df614
+2023-05-24T13:54:39.239+03:00  INFO 7164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:54:39.319+03:00  INFO 7164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:54:39.576+03:00  INFO 7164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:54:39.582+03:00  INFO 7164 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:54:40.245+03:00  INFO 7164 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:54:40.827+03:00  INFO 7164 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:54:40.978+03:00  INFO 7164 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@28cb86b2
+2023-05-24T13:54:41.415+03:00  INFO 7164 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:54:42.630+03:00  INFO 7164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:54:42.639+03:00  INFO 7164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:54:43.472+03:00  WARN 7164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:54:44.254+03:00  INFO 7164 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@359a2c96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dbf727a, org.springframework.security.web.context.SecurityContextHolderFilter@5c0f508b, org.springframework.security.web.header.HeaderWriterFilter@1af78e37, org.springframework.security.web.csrf.CsrfFilter@49f9758, org.springframework.security.web.authentication.logout.LogoutFilter@f1e1d66, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24a1858a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13cae908, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@242ebd3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ffa8126, org.springframework.security.web.access.ExceptionTranslationFilter@598f1faf, org.springframework.security.web.access.intercept.AuthorizationFilter@3b663112]
+2023-05-24T13:54:44.541+03:00  WARN 7164 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-05-24T13:54:44.541+03:00  INFO 7164 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/js/**']
+2023-05-24T13:54:44.657+03:00  INFO 7164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:54:44.678+03:00  INFO 7164 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 13.561 seconds (process running for 18.406)
+2023-05-24T13:54:53.316+03:00  INFO 7164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:54:53.317+03:00  INFO 7164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:54:53.318+03:00  INFO 7164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T13:55:52.172+03:00  INFO 7164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:55:52.176+03:00  INFO 7164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T13:55:52.184+03:00  INFO 7164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T13:56:01.145+03:00  INFO 1788 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 1788 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T13:56:01.149+03:00  INFO 1788 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T13:56:02.344+03:00  INFO 1788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T13:56:02.447+03:00  INFO 1788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2023-05-24T13:56:03.346+03:00  INFO 1788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T13:56:03.357+03:00  INFO 1788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T13:56:03.358+03:00  INFO 1788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T13:56:03.475+03:00  INFO 1788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T13:56:03.476+03:00  INFO 1788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2257 ms
+2023-05-24T13:56:03.672+03:00  INFO 1788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T13:56:03.847+03:00  INFO 1788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bfae028
+2023-05-24T13:56:03.848+03:00  INFO 1788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T13:56:03.959+03:00  INFO 1788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T13:56:04.037+03:00  INFO 1788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T13:56:04.040+03:00  INFO 1788 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T13:56:04.276+03:00  INFO 1788 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:56:04.473+03:00  INFO 1788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T13:56:04.545+03:00  INFO 1788 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@38f617f4
+2023-05-24T13:56:04.790+03:00  INFO 1788 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T13:56:05.540+03:00  INFO 1788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T13:56:05.544+03:00  INFO 1788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T13:56:06.011+03:00  WARN 1788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T13:56:06.395+03:00  INFO 1788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70efdd18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@247a8411, org.springframework.security.web.context.SecurityContextHolderFilter@7254a68a, org.springframework.security.web.header.HeaderWriterFilter@18adc20a, org.springframework.security.web.csrf.CsrfFilter@42257df7, org.springframework.security.web.authentication.logout.LogoutFilter@43b74979, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c751692, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36e98434, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75c3584e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c05f83b, org.springframework.security.web.access.ExceptionTranslationFilter@b53ce18, org.springframework.security.web.access.intercept.AuthorizationFilter@41433530]
+2023-05-24T13:56:06.758+03:00  INFO 1788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T13:56:06.777+03:00  INFO 1788 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.456 seconds (process running for 7.373)
+2023-05-24T13:56:12.616+03:00  INFO 1788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T13:56:12.617+03:00  INFO 1788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T13:56:12.620+03:00  INFO 1788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:03:20.730+03:00  INFO 1788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:03:20.733+03:00  INFO 1788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:03:20.741+03:00  INFO 1788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:12:13.181+03:00  INFO 10368 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 10368 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:12:13.185+03:00  INFO 10368 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:12:14.362+03:00  INFO 10368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:12:14.458+03:00  INFO 10368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:12:15.332+03:00  INFO 10368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:12:15.343+03:00  INFO 10368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:12:15.343+03:00  INFO 10368 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:12:15.658+03:00  INFO 10368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:12:15.659+03:00  INFO 10368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2402 ms
+2023-05-24T14:12:15.846+03:00  INFO 10368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:12:16.042+03:00  INFO 10368 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43f03c23
+2023-05-24T14:12:16.045+03:00  INFO 10368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:12:16.108+03:00  INFO 10368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:12:16.183+03:00  INFO 10368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:12:16.187+03:00  INFO 10368 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:12:16.487+03:00  INFO 10368 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:12:16.801+03:00  INFO 10368 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:12:16.895+03:00  INFO 10368 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7c91fe86
+2023-05-24T14:12:17.199+03:00  INFO 10368 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:12:18.186+03:00  INFO 10368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:12:18.191+03:00  INFO 10368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:12:18.742+03:00  WARN 10368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:12:19.132+03:00  INFO 10368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a9ac8b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7683ea43, org.springframework.security.web.context.SecurityContextHolderFilter@77acc95a, org.springframework.security.web.header.HeaderWriterFilter@49f9758, org.springframework.security.web.csrf.CsrfFilter@3fd21272, org.springframework.security.web.authentication.logout.LogoutFilter@5d2bc446, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@247a8411, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75c3584e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73bcd9b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15a41088, org.springframework.security.web.access.ExceptionTranslationFilter@6bcfb561, org.springframework.security.web.access.intercept.AuthorizationFilter@70efdd18]
+2023-05-24T14:12:19.510+03:00  INFO 10368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:12:19.531+03:00  INFO 10368 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.363 seconds (process running for 8.717)
+2023-05-24T14:12:29.494+03:00  INFO 10368 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:12:29.495+03:00  INFO 10368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:12:29.497+03:00  INFO 10368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:13:39.535+03:00  INFO 10368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:13:39.539+03:00  INFO 10368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:13:39.548+03:00  INFO 10368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:13:44.752+03:00  INFO 7540 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 7540 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:13:44.757+03:00  INFO 7540 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:13:45.948+03:00  INFO 7540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:13:46.067+03:00  INFO 7540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:13:46.938+03:00  INFO 7540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:13:46.949+03:00  INFO 7540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:13:46.950+03:00  INFO 7540 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:13:47.054+03:00  INFO 7540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:13:47.055+03:00  INFO 7540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2231 ms
+2023-05-24T14:13:47.221+03:00  INFO 7540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:13:47.382+03:00  INFO 7540 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1775c4e7
+2023-05-24T14:13:47.384+03:00  INFO 7540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:13:47.446+03:00  INFO 7540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:13:47.529+03:00  INFO 7540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:13:47.532+03:00  INFO 7540 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:13:47.759+03:00  INFO 7540 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:13:47.966+03:00  INFO 7540 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:13:48.025+03:00  INFO 7540 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4899799b
+2023-05-24T14:13:48.304+03:00  INFO 7540 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:13:49.274+03:00  INFO 7540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:13:49.279+03:00  INFO 7540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:13:50.066+03:00  WARN 7540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:13:50.932+03:00  INFO 7540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@247a8411, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c05f83b, org.springframework.security.web.context.SecurityContextHolderFilter@49f9758, org.springframework.security.web.header.HeaderWriterFilter@7e7987b8, org.springframework.security.web.csrf.CsrfFilter@7b11ff9a, org.springframework.security.web.authentication.logout.LogoutFilter@659ac28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2569afda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@209b4b35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f7b7720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.AuthorizationFilter@7c751692]
+2023-05-24T14:13:51.507+03:00  INFO 7540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:13:51.526+03:00  INFO 7540 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.791 seconds (process running for 9.206)
+2023-05-24T14:14:01.651+03:00  INFO 7540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:14:01.652+03:00  INFO 7540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:14:01.653+03:00  INFO 7540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:24:17.107+03:00  INFO 7540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:24:17.118+03:00  INFO 7540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:24:17.133+03:00  INFO 7540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:24:34.917+03:00  INFO 11064 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 11064 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:24:34.922+03:00  INFO 11064 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:24:36.422+03:00  INFO 11064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:24:36.511+03:00  INFO 11064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:24:37.423+03:00  INFO 11064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:24:37.436+03:00  INFO 11064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:24:37.436+03:00  INFO 11064 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:24:37.585+03:00  INFO 11064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:24:37.585+03:00  INFO 11064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2581 ms
+2023-05-24T14:24:37.870+03:00  INFO 11064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:24:38.078+03:00  INFO 11064 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a8cea24
+2023-05-24T14:24:38.080+03:00  INFO 11064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:24:38.183+03:00  INFO 11064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:24:38.341+03:00  INFO 11064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:24:38.345+03:00  INFO 11064 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:24:38.543+03:00  INFO 11064 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:24:38.878+03:00  INFO 11064 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:24:38.962+03:00  INFO 11064 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4d43a1b7
+2023-05-24T14:24:39.194+03:00  INFO 11064 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:24:40.110+03:00  INFO 11064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:24:40.113+03:00  INFO 11064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:24:40.755+03:00  WARN 11064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:24:41.190+03:00  INFO 11064 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10f192d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f0d01c9, org.springframework.security.web.context.SecurityContextHolderFilter@140cfc5f, org.springframework.security.web.header.HeaderWriterFilter@f1e1d66, org.springframework.security.web.csrf.CsrfFilter@5d2bc446, org.springframework.security.web.authentication.logout.LogoutFilter@4678ec43, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fb00a6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43edd2ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b663112, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c38e2bf, org.springframework.security.web.access.ExceptionTranslationFilter@53335328, org.springframework.security.web.access.intercept.AuthorizationFilter@17d45cfb]
+2023-05-24T14:24:41.537+03:00  INFO 11064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:24:41.549+03:00  INFO 11064 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.489 seconds (process running for 9.284)
+2023-05-24T14:25:17.925+03:00  INFO 11064 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:25:17.926+03:00  INFO 11064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:25:17.927+03:00  INFO 11064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:25:33.183+03:00 DEBUG 11064 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:25:52.925+03:00  INFO 11064 --- [http-nio-8080-exec-1] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:26:16.092+03:00  INFO 11064 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:26:16.094+03:00  INFO 11064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:26:16.102+03:00  INFO 11064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:26:23.655+03:00  INFO 2872 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 2872 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:26:23.661+03:00  INFO 2872 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:26:24.860+03:00  INFO 2872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:26:24.948+03:00  INFO 2872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:26:25.819+03:00  INFO 2872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:26:25.837+03:00  INFO 2872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:26:25.837+03:00  INFO 2872 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:26:25.963+03:00  INFO 2872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:26:25.964+03:00  INFO 2872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2205 ms
+2023-05-24T14:26:26.134+03:00  INFO 2872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:26:26.294+03:00  INFO 2872 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f677247
+2023-05-24T14:26:26.295+03:00  INFO 2872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:26:26.343+03:00  INFO 2872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:26:26.412+03:00  INFO 2872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:26:26.418+03:00  INFO 2872 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:26:26.639+03:00  INFO 2872 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:26:26.825+03:00  INFO 2872 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:26:26.896+03:00  INFO 2872 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@74500e4f
+2023-05-24T14:26:27.155+03:00  INFO 2872 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:26:27.898+03:00  INFO 2872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:26:27.902+03:00  INFO 2872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:26:28.335+03:00  WARN 2872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:26:28.676+03:00  INFO 2872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@820b78a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9ac8b, org.springframework.security.web.context.SecurityContextHolderFilter@209b4b35, org.springframework.security.web.header.HeaderWriterFilter@7254a68a, org.springframework.security.web.csrf.CsrfFilter@5671078e, org.springframework.security.web.authentication.logout.LogoutFilter@242ebd3b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70efdd18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff1a5a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cd2e348, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7683ea43, org.springframework.security.web.access.ExceptionTranslationFilter@7e7987b8, org.springframework.security.web.access.intercept.AuthorizationFilter@28dd8786]
+2023-05-24T14:26:29.005+03:00  INFO 2872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:26:29.017+03:00  INFO 2872 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.327 seconds (process running for 7.455)
+2023-05-24T14:26:43.777+03:00  INFO 2872 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:26:43.778+03:00  INFO 2872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:26:43.780+03:00  INFO 2872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T14:27:00.576+03:00 DEBUG 2872 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:27:10.180+03:00  INFO 2872 --- [http-nio-8080-exec-10] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:30:14.819+03:00  INFO 2872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:30:14.829+03:00  INFO 2872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:30:14.837+03:00  INFO 2872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:30:21.883+03:00  INFO 11492 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 11492 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:30:21.899+03:00  INFO 11492 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:30:23.413+03:00  INFO 11492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:30:23.514+03:00  INFO 11492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:30:25.777+03:00  INFO 11492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:30:25.812+03:00  INFO 11492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:30:25.815+03:00  INFO 11492 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:30:26.175+03:00  INFO 11492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:30:26.176+03:00  INFO 11492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4156 ms
+2023-05-24T14:30:26.498+03:00  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:30:26.779+03:00  INFO 11492 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1775c4e7
+2023-05-24T14:30:26.782+03:00  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:30:26.875+03:00  INFO 11492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:30:27.065+03:00  INFO 11492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:30:27.070+03:00  INFO 11492 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:30:27.766+03:00  INFO 11492 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:30:28.354+03:00  INFO 11492 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:30:28.470+03:00  INFO 11492 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4899799b
+2023-05-24T14:30:28.814+03:00  INFO 11492 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:30:30.203+03:00  INFO 11492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:30:30.208+03:00  INFO 11492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:30:30.669+03:00  WARN 11492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:30:31.118+03:00  INFO 11492 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@247a8411, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c05f83b, org.springframework.security.web.context.SecurityContextHolderFilter@49f9758, org.springframework.security.web.header.HeaderWriterFilter@7e7987b8, org.springframework.security.web.csrf.CsrfFilter@7b11ff9a, org.springframework.security.web.authentication.logout.LogoutFilter@659ac28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2569afda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@209b4b35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f7b7720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.AuthorizationFilter@7c751692]
+2023-05-24T14:30:31.449+03:00  INFO 11492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:30:31.464+03:00  INFO 11492 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 10.472 seconds (process running for 13.039)
+2023-05-24T14:30:37.739+03:00  INFO 11492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:30:37.739+03:00  INFO 11492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:30:37.740+03:00  INFO 11492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:30:42.835+03:00 DEBUG 11492 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:30:45.674+03:00  INFO 11492 --- [http-nio-8080-exec-8] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:31:27.368+03:00  INFO 11492 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:31:27.371+03:00  INFO 11492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:31:27.383+03:00  INFO 11492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:31:32.569+03:00  INFO 13116 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 13116 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:31:32.574+03:00  INFO 13116 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:31:33.795+03:00  INFO 13116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:31:33.885+03:00  INFO 13116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:31:34.796+03:00  INFO 13116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:31:34.807+03:00  INFO 13116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:31:34.807+03:00  INFO 13116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:31:34.916+03:00  INFO 13116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:31:34.916+03:00  INFO 13116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2239 ms
+2023-05-24T14:31:35.083+03:00  INFO 13116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:31:35.246+03:00  INFO 13116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1775c4e7
+2023-05-24T14:31:35.247+03:00  INFO 13116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:31:35.296+03:00  INFO 13116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:31:35.368+03:00  INFO 13116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:31:35.371+03:00  INFO 13116 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:31:35.603+03:00  INFO 13116 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:31:35.824+03:00  INFO 13116 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:31:35.896+03:00  INFO 13116 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4899799b
+2023-05-24T14:31:36.199+03:00  INFO 13116 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:31:37.004+03:00  INFO 13116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:31:37.008+03:00  INFO 13116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:31:37.476+03:00  WARN 13116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:31:37.866+03:00  INFO 13116 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@247a8411, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c05f83b, org.springframework.security.web.context.SecurityContextHolderFilter@49f9758, org.springframework.security.web.header.HeaderWriterFilter@7e7987b8, org.springframework.security.web.csrf.CsrfFilter@7b11ff9a, org.springframework.security.web.authentication.logout.LogoutFilter@659ac28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2569afda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@209b4b35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f7b7720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.AuthorizationFilter@7c751692]
+2023-05-24T14:31:38.216+03:00  INFO 13116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:31:38.229+03:00  INFO 13116 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.723 seconds (process running for 8.018)
+2023-05-24T14:31:47.258+03:00  INFO 13116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:31:47.259+03:00  INFO 13116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:31:47.262+03:00  INFO 13116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-24T14:31:51.690+03:00 DEBUG 13116 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:31:54.601+03:00  INFO 13116 --- [http-nio-8080-exec-7] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:32:16.024+03:00  INFO 13116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:32:16.028+03:00  INFO 13116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:32:16.041+03:00  INFO 13116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:32:20.912+03:00  INFO 12716 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 12716 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:32:20.916+03:00  INFO 12716 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:32:22.013+03:00  INFO 12716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:32:22.113+03:00  INFO 12716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:32:22.854+03:00  INFO 12716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:32:22.866+03:00  INFO 12716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:32:22.867+03:00  INFO 12716 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:32:22.972+03:00  INFO 12716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:32:22.972+03:00  INFO 12716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1982 ms
+2023-05-24T14:32:23.146+03:00  INFO 12716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:32:23.296+03:00  INFO 12716 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78307a56
+2023-05-24T14:32:23.298+03:00  INFO 12716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:32:23.349+03:00  INFO 12716 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:32:23.416+03:00  INFO 12716 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:32:23.419+03:00  INFO 12716 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:32:23.684+03:00  INFO 12716 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:32:23.885+03:00  INFO 12716 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:32:23.950+03:00  INFO 12716 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@54a056e4
+2023-05-24T14:32:24.207+03:00  INFO 12716 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:32:24.958+03:00  INFO 12716 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:32:24.962+03:00  INFO 12716 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:32:25.382+03:00  WARN 12716 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:32:25.732+03:00  INFO 12716 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f1e1d66, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cd28235, org.springframework.security.web.context.SecurityContextHolderFilter@73bcd9b4, org.springframework.security.web.header.HeaderWriterFilter@f7b7720, org.springframework.security.web.csrf.CsrfFilter@2ce3d95a, org.springframework.security.web.authentication.logout.LogoutFilter@7c751692, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18356951, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d10df04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c4e486e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75312c94, org.springframework.security.web.access.ExceptionTranslationFilter@ff1a5a0, org.springframework.security.web.access.intercept.AuthorizationFilter@15a41088]
+2023-05-24T14:32:26.059+03:00  INFO 12716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:32:26.072+03:00  INFO 12716 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 5.905 seconds (process running for 6.904)
+2023-05-24T14:32:32.190+03:00  INFO 12716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:32:32.191+03:00  INFO 12716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:32:32.202+03:00  INFO 12716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-24T14:32:32.749+03:00  WARN 12716 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [176] milliseconds.
+2023-05-24T14:32:44.672+03:00 DEBUG 12716 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:32:47.617+03:00  INFO 12716 --- [http-nio-8080-exec-7] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:33:58.070+03:00  INFO 12716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:33:58.073+03:00  INFO 12716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:33:58.077+03:00  INFO 12716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:34:03.408+03:00  INFO 5248 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 5248 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:34:03.414+03:00  INFO 5248 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:34:04.587+03:00  INFO 5248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:34:04.689+03:00  INFO 5248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:34:05.510+03:00  INFO 5248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:34:05.522+03:00  INFO 5248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:34:05.523+03:00  INFO 5248 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:34:05.651+03:00  INFO 5248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:34:05.651+03:00  INFO 5248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2151 ms
+2023-05-24T14:34:05.828+03:00  INFO 5248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:34:05.979+03:00  INFO 5248 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bfae028
+2023-05-24T14:34:05.981+03:00  INFO 5248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:34:06.030+03:00  INFO 5248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:34:06.123+03:00  INFO 5248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:34:06.125+03:00  INFO 5248 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:34:06.354+03:00  INFO 5248 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:34:06.508+03:00  INFO 5248 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:34:06.576+03:00  INFO 5248 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@38f617f4
+2023-05-24T14:34:06.891+03:00  INFO 5248 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:34:07.682+03:00  INFO 5248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:34:07.686+03:00  INFO 5248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:34:08.134+03:00  WARN 5248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:34:08.490+03:00  INFO 5248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70efdd18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@247a8411, org.springframework.security.web.context.SecurityContextHolderFilter@7254a68a, org.springframework.security.web.header.HeaderWriterFilter@18adc20a, org.springframework.security.web.csrf.CsrfFilter@42257df7, org.springframework.security.web.authentication.logout.LogoutFilter@43b74979, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c751692, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36e98434, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75c3584e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c05f83b, org.springframework.security.web.access.ExceptionTranslationFilter@b53ce18, org.springframework.security.web.access.intercept.AuthorizationFilter@41433530]
+2023-05-24T14:34:08.816+03:00  INFO 5248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:34:08.829+03:00  INFO 5248 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.141 seconds (process running for 7.233)
+2023-05-24T14:34:16.520+03:00  INFO 5248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:34:16.521+03:00  INFO 5248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:34:16.522+03:00  INFO 5248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T14:34:28.019+03:00 DEBUG 5248 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:34:34.131+03:00  INFO 5248 --- [http-nio-8080-exec-1] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:52:09.582+03:00  INFO 5248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:52:09.610+03:00  INFO 5248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:52:09.720+03:00  INFO 5248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:52:24.525+03:00  INFO 3536 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 3536 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:52:24.530+03:00  INFO 3536 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:52:26.502+03:00  INFO 3536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:52:26.582+03:00  INFO 3536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:52:27.750+03:00  INFO 3536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:52:27.769+03:00  INFO 3536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:52:27.770+03:00  INFO 3536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:52:27.965+03:00  INFO 3536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:52:27.965+03:00  INFO 3536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3344 ms
+2023-05-24T14:52:28.150+03:00  INFO 3536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:52:28.366+03:00  INFO 3536 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e3f2908
+2023-05-24T14:52:28.368+03:00  INFO 3536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:52:28.446+03:00  INFO 3536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:52:28.601+03:00  INFO 3536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:52:28.605+03:00  INFO 3536 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:52:28.869+03:00  INFO 3536 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:52:29.240+03:00  INFO 3536 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:52:29.341+03:00  INFO 3536 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7cdb7fc
+2023-05-24T14:52:29.598+03:00  INFO 3536 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:52:30.589+03:00  INFO 3536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:52:30.593+03:00  INFO 3536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:52:31.066+03:00  WARN 3536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:52:31.530+03:00  INFO 3536 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@608c7b5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2643ed03, org.springframework.security.web.context.SecurityContextHolderFilter@18356951, org.springframework.security.web.header.HeaderWriterFilter@6a9ac8b, org.springframework.security.web.csrf.CsrfFilter@7a2ffb0b, org.springframework.security.web.authentication.logout.LogoutFilter@54ec8ab3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c13534a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a0b6aff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@140cfc5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17d45cfb, org.springframework.security.web.access.ExceptionTranslationFilter@4c05f83b, org.springframework.security.web.access.intercept.AuthorizationFilter@5d08a65c]
+2023-05-24T14:52:31.978+03:00  INFO 3536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:52:31.998+03:00  INFO 3536 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 8.367 seconds (process running for 10.739)
+2023-05-24T14:52:56.650+03:00  INFO 3536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:52:56.651+03:00  INFO 3536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:52:56.653+03:00  INFO 3536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T14:53:00.908+03:00 DEBUG 3536 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:53:03.083+03:00  INFO 3536 --- [http-nio-8080-exec-8] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T14:56:05.373+03:00  INFO 3536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:56:05.391+03:00  INFO 3536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T14:56:05.398+03:00  INFO 3536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T14:56:16.926+03:00  INFO 9292 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 9292 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T14:56:16.937+03:00  INFO 9292 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T14:56:18.271+03:00  INFO 9292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T14:56:18.353+03:00  INFO 9292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2023-05-24T14:56:19.237+03:00  INFO 9292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T14:56:19.258+03:00  INFO 9292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T14:56:19.258+03:00  INFO 9292 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T14:56:19.409+03:00  INFO 9292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T14:56:19.410+03:00  INFO 9292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2400 ms
+2023-05-24T14:56:19.592+03:00  INFO 9292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T14:56:19.761+03:00  INFO 9292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f13811b
+2023-05-24T14:56:19.763+03:00  INFO 9292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T14:56:19.824+03:00  INFO 9292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T14:56:20.074+03:00  INFO 9292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T14:56:20.077+03:00  INFO 9292 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T14:56:20.321+03:00  INFO 9292 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:56:20.643+03:00  INFO 9292 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T14:56:20.701+03:00  INFO 9292 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@1412682c
+2023-05-24T14:56:20.933+03:00  INFO 9292 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T14:56:21.763+03:00  INFO 9292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T14:56:21.767+03:00  INFO 9292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T14:56:22.185+03:00  WARN 9292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T14:56:22.523+03:00  INFO 9292 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53335328, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a0b6aff, org.springframework.security.web.context.SecurityContextHolderFilter@1e0c898c, org.springframework.security.web.header.HeaderWriterFilter@ff1a5a0, org.springframework.security.web.csrf.CsrfFilter@3dc4ed6f, org.springframework.security.web.authentication.logout.LogoutFilter@1812b564, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7683ea43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73bcd9b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43b7bd5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f1e1d66, org.springframework.security.web.access.ExceptionTranslationFilter@209b4b35, org.springframework.security.web.access.intercept.AuthorizationFilter@6a9ac8b]
+2023-05-24T14:56:22.826+03:00  INFO 9292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T14:56:22.840+03:00  INFO 9292 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.722 seconds (process running for 7.888)
+2023-05-24T14:56:29.728+03:00  INFO 9292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T14:56:29.728+03:00  INFO 9292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T14:56:29.731+03:00  INFO 9292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T14:56:34.816+03:00 DEBUG 9292 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T14:56:37.633+03:00  INFO 9292 --- [http-nio-8080-exec-8] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T15:15:46.751+03:00  INFO 9292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:15:46.771+03:00  INFO 9292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:15:46.813+03:00  INFO 9292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:16:04.815+03:00  INFO 10456 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 10456 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:16:04.820+03:00  INFO 10456 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:16:06.681+03:00  INFO 10456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:16:06.792+03:00  INFO 10456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:16:08.025+03:00  INFO 10456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:16:08.040+03:00  INFO 10456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:16:08.041+03:00  INFO 10456 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:16:08.248+03:00  INFO 10456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:16:08.249+03:00  INFO 10456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3344 ms
+2023-05-24T15:16:08.418+03:00  INFO 10456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:16:08.717+03:00  INFO 10456 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72443081
+2023-05-24T15:16:08.718+03:00  INFO 10456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:16:08.803+03:00  INFO 10456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:16:08.918+03:00  INFO 10456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:16:08.923+03:00  INFO 10456 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:16:09.274+03:00  INFO 10456 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:16:09.762+03:00  INFO 10456 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:16:09.895+03:00  INFO 10456 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7d8b66d9
+2023-05-24T15:16:10.228+03:00  INFO 10456 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:16:11.396+03:00  INFO 10456 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:16:11.401+03:00  INFO 10456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:16:11.860+03:00  WARN 10456 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:16:12.236+03:00  INFO 10456 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b11deb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d08a65c, org.springframework.security.web.context.SecurityContextHolderFilter@4c05f83b, org.springframework.security.web.header.HeaderWriterFilter@28dd8786, org.springframework.security.web.csrf.CsrfFilter@464abed, org.springframework.security.web.authentication.logout.LogoutFilter@21be80f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18ffc008, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9ac8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53335328, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c13534a, org.springframework.security.web.access.ExceptionTranslationFilter@7c751692, org.springframework.security.web.access.intercept.AuthorizationFilter@70044113]
+2023-05-24T15:16:12.588+03:00  INFO 10456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:16:12.613+03:00  INFO 10456 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 8.678 seconds (process running for 12.266)
+2023-05-24T15:16:17.979+03:00  INFO 10456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:16:17.979+03:00  INFO 10456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:16:17.980+03:00  INFO 10456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T15:16:24.209+03:00 DEBUG 10456 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T15:16:27.502+03:00  INFO 10456 --- [http-nio-8080-exec-8] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T15:18:20.000+03:00  INFO 10456 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:18:20.004+03:00  INFO 10456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:18:20.012+03:00  INFO 10456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:18:29.025+03:00  INFO 4996 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 4996 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:18:29.030+03:00  INFO 4996 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:18:30.540+03:00  INFO 4996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:18:30.636+03:00  INFO 4996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:18:31.355+03:00  INFO 4996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:18:31.366+03:00  INFO 4996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:18:31.366+03:00  INFO 4996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:18:31.499+03:00  INFO 4996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:18:31.500+03:00  INFO 4996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2364 ms
+2023-05-24T15:18:31.714+03:00  INFO 4996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:18:31.872+03:00  INFO 4996 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b791a81
+2023-05-24T15:18:31.874+03:00  INFO 4996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:18:31.924+03:00  INFO 4996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:18:32.013+03:00  INFO 4996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:18:32.016+03:00  INFO 4996 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:18:32.235+03:00  INFO 4996 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:18:32.403+03:00  INFO 4996 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:18:32.480+03:00  INFO 4996 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@13aed42b
+2023-05-24T15:18:32.701+03:00  INFO 4996 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:18:33.558+03:00  INFO 4996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:18:33.564+03:00  INFO 4996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:18:34.015+03:00  WARN 4996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:18:34.379+03:00  INFO 4996 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43edd2ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fc4038f, org.springframework.security.web.context.SecurityContextHolderFilter@37fd496a, org.springframework.security.web.header.HeaderWriterFilter@5d10df04, org.springframework.security.web.csrf.CsrfFilter@7ee9920a, org.springframework.security.web.authentication.logout.LogoutFilter@4c05f83b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75312c94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27ac3b6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c46a957, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cd9ee2c, org.springframework.security.web.access.ExceptionTranslationFilter@73bcd9b4, org.springframework.security.web.access.intercept.AuthorizationFilter@3cd28235]
+2023-05-24T15:18:34.968+03:00  INFO 4996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:18:34.981+03:00  INFO 4996 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.869 seconds (process running for 7.984)
+2023-05-24T15:18:41.443+03:00  INFO 4996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:18:41.444+03:00  INFO 4996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:18:41.446+03:00  INFO 4996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T15:22:32.401+03:00  INFO 4996 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:22:32.404+03:00  INFO 4996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:22:32.411+03:00  INFO 4996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:22:38.860+03:00  INFO 5304 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 5304 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:22:38.865+03:00  INFO 5304 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:22:40.038+03:00  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:22:40.138+03:00  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:22:41.079+03:00  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:22:41.094+03:00  INFO 5304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:22:41.094+03:00  INFO 5304 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:22:41.226+03:00  INFO 5304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:22:41.227+03:00  INFO 5304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
+2023-05-24T15:22:41.401+03:00  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:22:41.557+03:00  INFO 5304 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f677247
+2023-05-24T15:22:41.558+03:00  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:22:41.618+03:00  INFO 5304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:22:41.696+03:00  INFO 5304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:22:41.701+03:00  INFO 5304 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:22:41.966+03:00  INFO 5304 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:22:42.157+03:00  INFO 5304 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:22:42.232+03:00  INFO 5304 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@74500e4f
+2023-05-24T15:22:42.495+03:00  INFO 5304 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:22:43.275+03:00  INFO 5304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:22:43.282+03:00  INFO 5304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:22:43.730+03:00  WARN 5304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:22:44.086+03:00  INFO 5304 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@820b78a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9ac8b, org.springframework.security.web.context.SecurityContextHolderFilter@209b4b35, org.springframework.security.web.header.HeaderWriterFilter@7254a68a, org.springframework.security.web.csrf.CsrfFilter@5671078e, org.springframework.security.web.authentication.logout.LogoutFilter@242ebd3b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70efdd18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff1a5a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cd2e348, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7683ea43, org.springframework.security.web.access.ExceptionTranslationFilter@7e7987b8, org.springframework.security.web.access.intercept.AuthorizationFilter@28dd8786]
+2023-05-24T15:22:44.415+03:00  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:22:44.426+03:00  INFO 5304 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.49 seconds (process running for 7.619)
+2023-05-24T15:22:48.423+03:00  INFO 5304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:22:48.423+03:00  INFO 5304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:22:48.425+03:00  INFO 5304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T15:29:32.140+03:00  INFO 5304 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:29:32.143+03:00  INFO 5304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:29:32.150+03:00  INFO 5304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:29:37.658+03:00  INFO 6788 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 6788 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:29:37.663+03:00  INFO 6788 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:29:38.776+03:00  INFO 6788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:29:38.862+03:00  INFO 6788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:29:39.629+03:00  INFO 6788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:29:39.640+03:00  INFO 6788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:29:39.640+03:00  INFO 6788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:29:39.746+03:00  INFO 6788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:29:39.747+03:00  INFO 6788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1998 ms
+2023-05-24T15:29:39.908+03:00  INFO 6788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:29:40.062+03:00  INFO 6788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78307a56
+2023-05-24T15:29:40.064+03:00  INFO 6788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:29:40.113+03:00  INFO 6788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:29:40.188+03:00  INFO 6788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:29:40.192+03:00  INFO 6788 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:29:40.401+03:00  INFO 6788 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:29:40.621+03:00  INFO 6788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:29:40.679+03:00  INFO 6788 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@54a056e4
+2023-05-24T15:29:40.936+03:00  INFO 6788 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:29:41.681+03:00  INFO 6788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:29:41.686+03:00  INFO 6788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:29:42.161+03:00  WARN 6788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:29:42.588+03:00  INFO 6788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f1e1d66, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cd28235, org.springframework.security.web.context.SecurityContextHolderFilter@73bcd9b4, org.springframework.security.web.header.HeaderWriterFilter@f7b7720, org.springframework.security.web.csrf.CsrfFilter@2ce3d95a, org.springframework.security.web.authentication.logout.LogoutFilter@7c751692, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18356951, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d10df04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c4e486e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75312c94, org.springframework.security.web.access.ExceptionTranslationFilter@ff1a5a0, org.springframework.security.web.access.intercept.AuthorizationFilter@15a41088]
+2023-05-24T15:29:42.929+03:00  INFO 6788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:29:42.942+03:00  INFO 6788 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 6.018 seconds (process running for 7.002)
+2023-05-24T15:29:49.694+03:00  INFO 6788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:29:49.695+03:00  INFO 6788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:29:49.697+03:00  INFO 6788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-24T15:30:45.644+03:00  INFO 6788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:30:45.647+03:00  INFO 6788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:30:45.655+03:00  INFO 6788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:30:56.528+03:00  INFO 11136 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 11136 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:30:56.532+03:00  INFO 11136 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:30:57.776+03:00  INFO 11136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:30:57.884+03:00  INFO 11136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:30:59.067+03:00  INFO 11136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:30:59.082+03:00  INFO 11136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:30:59.082+03:00  INFO 11136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:30:59.243+03:00  INFO 11136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:30:59.244+03:00  INFO 11136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2635 ms
+2023-05-24T15:30:59.537+03:00  INFO 11136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:30:59.890+03:00  INFO 11136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4538856f
+2023-05-24T15:30:59.892+03:00  INFO 11136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:30:59.966+03:00  INFO 11136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:31:00.074+03:00  INFO 11136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:31:00.078+03:00  INFO 11136 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:31:00.347+03:00  INFO 11136 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:31:00.634+03:00  INFO 11136 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:31:00.713+03:00  INFO 11136 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3af36922
+2023-05-24T15:31:01.021+03:00  INFO 11136 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:31:01.812+03:00  INFO 11136 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:31:01.816+03:00  INFO 11136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:31:02.286+03:00  WARN 11136 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:31:02.622+03:00  INFO 11136 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60688a97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@242ebd3b, org.springframework.security.web.context.SecurityContextHolderFilter@6f6c6c70, org.springframework.security.web.header.HeaderWriterFilter@3dc4ed6f, org.springframework.security.web.csrf.CsrfFilter@5b2ade46, org.springframework.security.web.authentication.logout.LogoutFilter@37fd496a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13cae908, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40f15786, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b53ce18, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d2bc446, org.springframework.security.web.access.ExceptionTranslationFilter@4cb91fa4, org.springframework.security.web.access.intercept.AuthorizationFilter@7a2ffb0b]
+2023-05-24T15:31:02.935+03:00  INFO 11136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:31:02.947+03:00  INFO 11136 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.243 seconds (process running for 8.468)
+2023-05-24T15:31:08.407+03:00  INFO 11136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:31:08.407+03:00  INFO 11136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:31:08.408+03:00  INFO 11136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T15:31:56.426+03:00  INFO 11136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:31:56.430+03:00  INFO 11136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:31:56.438+03:00  INFO 11136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:32:02.546+03:00  INFO 10288 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 10288 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:32:02.551+03:00  INFO 10288 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:32:04.170+03:00  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:32:04.317+03:00  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:32:05.809+03:00  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:32:05.829+03:00  INFO 10288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:32:05.830+03:00  INFO 10288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:32:06.019+03:00  INFO 10288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:32:06.020+03:00  INFO 10288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3387 ms
+2023-05-24T15:32:06.321+03:00  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:32:06.692+03:00  INFO 10288 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bfae028
+2023-05-24T15:32:06.696+03:00  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:32:06.785+03:00  INFO 10288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:32:06.937+03:00  INFO 10288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:32:06.943+03:00  INFO 10288 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:32:07.322+03:00  INFO 10288 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:32:07.669+03:00  INFO 10288 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:32:07.805+03:00  INFO 10288 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4899799b
+2023-05-24T15:32:08.161+03:00  INFO 10288 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:32:09.568+03:00  INFO 10288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:32:09.574+03:00  INFO 10288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:32:10.316+03:00  WARN 10288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:32:10.699+03:00  INFO 10288 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@247a8411, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c05f83b, org.springframework.security.web.context.SecurityContextHolderFilter@49f9758, org.springframework.security.web.header.HeaderWriterFilter@7e7987b8, org.springframework.security.web.csrf.CsrfFilter@7b11ff9a, org.springframework.security.web.authentication.logout.LogoutFilter@659ac28c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2569afda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@209b4b35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f7b7720, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@820b78a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.AuthorizationFilter@7c751692]
+2023-05-24T15:32:11.028+03:00  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:32:11.042+03:00  INFO 10288 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 9.505 seconds (process running for 10.837)
+2023-05-24T15:32:14.400+03:00  INFO 10288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:32:14.401+03:00  INFO 10288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:32:14.402+03:00  INFO 10288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-24T15:39:11.047+03:00  INFO 10288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:39:11.060+03:00  INFO 10288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:39:11.086+03:00  INFO 10288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-24T15:39:22.748+03:00  INFO 12220 --- [main] r.d.racebackend.RaceBackendApplication   : Starting RaceBackendApplication using Java 17.0.5 with PID 12220 (D:\работа\projects\raceBackend\target\classes started by danilov-na in D:\работа\projects\raceBackend)
+2023-05-24T15:39:22.753+03:00  INFO 12220 --- [main] r.d.racebackend.RaceBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-24T15:39:24.152+03:00  INFO 12220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24T15:39:24.222+03:00  INFO 12220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2023-05-24T15:39:25.000+03:00  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-24T15:39:25.012+03:00  INFO 12220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-24T15:39:25.013+03:00  INFO 12220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24T15:39:25.132+03:00  INFO 12220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-24T15:39:25.133+03:00  INFO 12220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2023-05-24T15:39:25.318+03:00  INFO 12220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-24T15:39:25.487+03:00  INFO 12220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e3f2908
+2023-05-24T15:39:25.489+03:00  INFO 12220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-24T15:39:25.565+03:00  INFO 12220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24T15:39:25.730+03:00  INFO 12220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24T15:39:25.734+03:00  INFO 12220 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-05-24T15:39:25.953+03:00  INFO 12220 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:39:26.266+03:00  INFO 12220 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24T15:39:26.332+03:00  INFO 12220 --- [main] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7cdb7fc
+2023-05-24T15:39:26.588+03:00  INFO 12220 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-05-24T15:39:27.611+03:00  INFO 12220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24T15:39:27.615+03:00  INFO 12220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:39:28.033+03:00  WARN 12220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24T15:39:28.387+03:00  INFO 12220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70044113, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18ffc008, org.springframework.security.web.context.SecurityContextHolderFilter@2569afda, org.springframework.security.web.header.HeaderWriterFilter@1812b564, org.springframework.security.web.csrf.CsrfFilter@37fd496a, org.springframework.security.web.authentication.logout.LogoutFilter@1dbf727a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71b32407, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70efdd18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a9ac8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4678ec43, org.springframework.security.web.access.ExceptionTranslationFilter@4a0ee0ba, org.springframework.security.web.access.intercept.AuthorizationFilter@54ec8ab3]
+2023-05-24T15:39:28.709+03:00  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24T15:39:28.721+03:00  INFO 12220 --- [main] r.d.racebackend.RaceBackendApplication   : Started RaceBackendApplication in 7.019 seconds (process running for 8.82)
+2023-05-24T15:40:27.401+03:00  INFO 12220 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24T15:40:27.402+03:00  INFO 12220 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-24T15:40:27.406+03:00  INFO 12220 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-24T15:47:00.197+03:00 DEBUG 12220 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.jwt_token,p1_0.name,p1_0.password,p1_0.role from person p1_0 where p1_0.name=?
+2023-05-24T15:47:03.061+03:00  INFO 12220 --- [http-nio-8080-exec-10] r.d.racebackend.RaceBackendApplication   : GET: /menu
+2023-05-24T15:50:32.001+03:00  INFO 12220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24T15:50:32.024+03:00  INFO 12220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-24T15:50:32.060+03:00  INFO 12220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

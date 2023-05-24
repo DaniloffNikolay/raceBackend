@@ -16,7 +16,8 @@ import ru.danilov.racebackend.security.PersonDetails;
 public class MainController {
 
     @GetMapping
-    public String getHomePage() {
+    public String getHomePage(Model model) {
+        model.addAttribute("token", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIGRldGFpbHMiLCJpc3MiOiJ2b3RpbmciLCJleHAiOjE2ODQ5OTU2MjYsImlhdCI6MTY4NDkwOTIyNiwidXNlcm5hbWUiOiJ1c2VyIn0.xZU-ahNiFsGvUwKXkbckWQrT9QUBeOae1B5Hsswpn3k");
         return "home_page";
     }
 

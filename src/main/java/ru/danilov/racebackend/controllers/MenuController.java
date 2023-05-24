@@ -45,11 +45,11 @@ public class MenuController {
         PersonDetails personDetails = (PersonDetails) authentication.getPrincipal();
 
         Person person = personDetails.getPerson();
-
         String jwtToken = utils.checkTokenAndGetToken(person);
 
-        HttpClient client = HttpClient.newHttpClient();
+        model.addAttribute("token", "Bearer " + jwtToken);
 
+        /*HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("http://localhost:8081/game/list-ready"))
                 .timeout(Duration.of(10, SECONDS))
@@ -58,8 +58,7 @@ public class MenuController {
                 .build();
 
         String string = client.sendAsync(request, HttpResponse.BodyHandlers.ofString()).thenApply(HttpResponse::body).get();
-
-        model.addAttribute("string", string);
+        model.addAttribute("string", string);*/
 
         return "/menu/menu";
     }

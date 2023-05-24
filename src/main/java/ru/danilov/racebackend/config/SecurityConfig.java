@@ -6,10 +6,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import ru.danilov.racebackend.services.PersonDetailsService;
 
 import static org.springframework.security.config.Customizer.withDefaults;
@@ -37,6 +40,7 @@ public class SecurityConfig {
                 .authenticationManager(authenticationManager)
                 .authorizeHttpRequests((authz) ->
                         authz
+                                .requestMatchers("/js/**", "/css/**").permitAll()
                                 .requestMatchers("/", "/auth/**").permitAll()
                                 .anyRequest().authenticated()
                 );
@@ -58,6 +62,11 @@ public class SecurityConfig {
 
         return http.build();
     }
+
+    /*@Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().requestMatchers("/js/**");
+    }*/
 
     @Bean
     public PasswordEncoder getPasswordEncoder() {

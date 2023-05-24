@@ -5,6 +5,17 @@
     <title>Главная страница</title>
 </head>
 <body>
+
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+
+<script th:inline="javascript">
+    var tokenJs = /*[[${token}]]*/;
+</script>
+
+<button type="button" th:onclick="getToken(tokenJs)">Show Name</button>
+<button type="button" th:onclick="sendGetRequest(tokenJs)">Send get request</button>
+
+
   Тут Будет главная страница!
 
   <br/>

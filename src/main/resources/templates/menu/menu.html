@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню</title>
+</head>
+<body>
+
+<script  th:inline="javascript">
+    function greetWorld() {
+        alert("hello world")
+    }
+
+    function salute(name) {
+        alert("hello: " + name)
+    }
+</script>
+
+<br/>
+
+<p th:text="${'лист ожидающих: ' + string.toString()}">VALUE</p>
+
+<button th:onclick="greetWorld()">using no variable</button>
+
+<button th:data-name="${string.toString()}" th:onclick="salute(this.getAttribute('data-name'))">
+    using with variable
+</button>
+
+<br/>
+
+<form th:action="@{/user}" th:method="GET">
+    <input type="submit" value="Личный кабинет">
+</form>
+
+<form th:action="@{/logout}" th:method="POST">
+    <input type="submit" value="Выйти">
+</form>
+
+</body>
+</html>
